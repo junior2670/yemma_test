@@ -1,5 +1,5 @@
 'use client'
-
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 export default function Navbar(){
@@ -13,7 +13,7 @@ const [menuOpen,setMenuOpen]=useState(false)
           <div className=" flex justify-between h-10 h-[79px] mx-[50px] items-center max-md:h-[50px] max-md:mx-[20px]"> 
              {/*LOGO*/}
                 <div>
-                    <a href="">
+                    <Link href="/">
                         {/* loop*/}
                         <div>
                           
@@ -24,7 +24,7 @@ const [menuOpen,setMenuOpen]=useState(false)
                         width={200} 
                         height={200}  className=" max-md:w-[150px] z-0"/>
                        
-                    </a>
+                    </Link>
                 </div>
             {/*liens*/}
                 <div className="flex">
@@ -39,11 +39,11 @@ const [menuOpen,setMenuOpen]=useState(false)
                  
                     <div className="flex space-x-4 max-md:hidden">
                             
-                        <a href="" className="flex  items-center border border-slate-100 p-[7px] px-[25px] rounded-3xl  space-x-3 hover:bg-gray-100 ">
+                        <Link href="/PageUser/Candidat" className="flex  items-center border border-slate-100 p-[7px] px-[25px] rounded-3xl  space-x-3 hover:bg-gray-100 ">
                             <p className="text-2xl">+</p>
                             <p className="font-bold">Candidat</p>
-                        </a>
-                        <a href="" className="flex items-center p-[7px]  px-[20px] rounded-3xl font-bold bg-orange-700 opacity-70 text-white space-x-2 hover:bg-orange-700/80"> 
+                        </Link >
+                        <Link  href="/PageUser/Recruteur" className="flex items-center p-[7px]  px-[20px] rounded-3xl font-bold bg-orange-700 opacity-70 text-white space-x-2 hover:bg-orange-700/80"> 
                             <Image 
                                 src="/icone/sortie.png" 
                                 alt="sortie" 
@@ -51,7 +51,7 @@ const [menuOpen,setMenuOpen]=useState(false)
                                 height={25} 
                                 />
                             <p className="">Recruteur</p>
-                        </a>
+                        </Link >
                           
                     </div>
                 </div>
