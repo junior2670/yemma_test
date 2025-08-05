@@ -17,7 +17,7 @@ const fadeInUp = {
 };
 
 const RecruitmentLanding = () => {
-  const [hoveredFeature, setHoveredFeature] = useState(null);
+  const [hoveredFeature, setHoveredFeature] = useState(0);
   const [animationStep, setAnimationStep] = useState(0);
 
   useEffect(() => {
@@ -140,7 +140,7 @@ const RecruitmentLanding = () => {
                 hoveredFeature === index ? 'scale-105 shadow-2xl' : ''
               }`}
               onMouseEnter={() => setHoveredFeature(index)}
-              onMouseLeave={() => setHoveredFeature(null)}
+              onMouseLeave={() => setHoveredFeature(0)}
             >
               <div className={`mb-6 ${feature.iconBg} p-3 rounded-xl inline-block`}>
                 {feature.icon}

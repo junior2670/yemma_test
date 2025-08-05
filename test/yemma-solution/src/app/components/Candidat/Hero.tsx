@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Variants } from 'framer-motion';
 export default function Hero() {
   
     // Variantes d'animation pour les conteneurs
@@ -16,7 +17,7 @@ export default function Hero() {
   }
 
   // Variantes pour les éléments de texte
-  const textVariants = {
+  const textVariants:Variants = {
     hidden: { 
       opacity: 0, 
       y: 30,
@@ -34,7 +35,7 @@ export default function Hero() {
   }
 
   // Variantes pour l'image
-  const imageVariants = {
+  const imageVariants :Variants= {
     hidden: { 
       opacity: 0, 
       scale: 0.8,
@@ -52,7 +53,7 @@ export default function Hero() {
   }
 
   // Variantes pour les boutons
-  const buttonVariants = {
+  const buttonVariants:Variants = {
     hidden: { 
       opacity: 0, 
       y: 20,
@@ -96,10 +97,12 @@ export default function Hero() {
         <motion.div 
           className="space-y-4 md:space-y-5 lg:space-y-[40px] text-center lg:text-left flex-1 order-2 lg:order-1"
           variants={textVariants}
+        
         >
           <motion.h1 
             className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl leading-[1.5] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.9] xl:leading-[1.4] font-[550]"
             variants={textVariants}
+            
           >
             <motion.span
               initial={{ opacity: 0, x: -20 }}

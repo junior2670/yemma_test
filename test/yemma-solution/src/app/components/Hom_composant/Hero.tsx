@@ -1,9 +1,11 @@
 "use client"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { Variants } from 'framer-motion';
+
 export default function Hero() {
   // Variantes d'animation pour les conteneurs
-  const containerVariants = {
+  const containerVariants:Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -15,7 +17,7 @@ export default function Hero() {
   }
 
   // Variantes pour les éléments de texte
-  const textVariants = {
+  const textVariants:Variants = {
     hidden: { 
       opacity: 0, 
       y: 30,
@@ -33,7 +35,7 @@ export default function Hero() {
   }
 
   // Variantes pour l'image
-  const imageVariants = {
+  const imageVariants:Variants = {
     hidden: { 
       opacity: 0, 
       scale: 0.8,
@@ -51,7 +53,7 @@ export default function Hero() {
   }
 
   // Variantes pour les boutons
-  const buttonVariants = {
+  const buttonVariants:Variants = {
     hidden: { 
       opacity: 0, 
       y: 20,

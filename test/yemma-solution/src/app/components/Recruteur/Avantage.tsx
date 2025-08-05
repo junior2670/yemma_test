@@ -68,6 +68,12 @@ export default function TextImageSwitcherA() {
   const isButtonsInView = useInView(buttonsRef, { once: true, margin: "-50px" });
   const isSous_descView= useInView(Sous_descRef,{once:true, margin:"-50px"});
   const isText_View= useInView(TextavFooterRef,{once:true, margin:"-70px"});
+  type Service = {
+  label: string;
+  image: string;
+  description: string;
+  sous_desc:string;
+};
   /** permet au hover de s'afficher sur la première info */
   useEffect(() => {
     setActiveIndex(0);
@@ -90,7 +96,7 @@ export default function TextImageSwitcherA() {
     return () => clearInterval(interval);
   }, [isPaused]);
 
-  const handleItemClick = (item, index) => {
+  const handleItemClick = (item:Service, index:number) => {
     setCurrentImage(item.image);
     setActiveIndex(index);
     setSous_Desc(item.sous_desc);

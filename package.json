@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "animations": "^0.0.0"
+  }
+}
