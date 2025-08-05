@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { img } from 'framer-motion/client'
 
 const textOptions = [
   { 
@@ -41,7 +40,6 @@ export default function TextImageSwitcher() {
   const imageRef = useRef(null)
   const buttonsRef = useRef(null)
   
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
   const isTitleInView = useInView(titleRef, { once: true, margin: "-50px" })
   const isImageInView = useInView(imageRef, { once: true, margin: "-50px" })
   const isButtonsInView = useInView(buttonsRef, { once: true, margin: "-50px" })
