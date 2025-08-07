@@ -109,7 +109,7 @@ const RecruitmentLanding = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-5xl font-bold text-gray-900 mb-6 leading-tight"
+          className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
         >
           Des profils adaptés à vos <span className="text-orange-700/70">enjeux</span>
         </motion.h1>
@@ -166,7 +166,7 @@ const RecruitmentLanding = () => {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-4xl font-bold text-gray-900"
+              className="text-4xl  md:text-5xl font-bold text-gray-900"
             >
               Faites briller votre <span className="text-orange-700/70">parcours</span>
             </motion.h2>

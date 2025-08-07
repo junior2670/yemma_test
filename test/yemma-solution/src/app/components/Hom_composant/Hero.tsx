@@ -146,7 +146,7 @@ export default function Hero() {
           >
             <motion.a 
               href="" 
-              className="text-white max-sm:text-[12px] border bg-orange-700/70 opacity-80 p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity w-full sm:w-auto md:w-[200px] lg:w-auto rounded-sm"
+              className="text-white max-sm:text-[12px] border bg-orange-700/80 p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity w-full sm:w-auto md:w-[200px] lg:w-auto rounded-sm"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
@@ -155,7 +155,7 @@ export default function Hero() {
             </motion.a>
             <motion.a 
               href="" 
-              className="text-white max-sm:text-[12px] border bg-orange-700/75 opacity-80 p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity w-full sm:w-auto md:w-[200px] lg:w-auto rounded-sm"
+              className="text-white max-sm:text-[12px] border bg-orange-700/80  p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity w-full sm:w-auto md:w-[200px] lg:w-auto rounded-sm"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"

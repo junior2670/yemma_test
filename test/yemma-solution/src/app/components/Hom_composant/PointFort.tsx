@@ -1,37 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-
-const textOptions = [
-  { 
-    label: 'Base de profils vérifiés',
-    image: '/image/image1.svg',
-    description: 'tous nos candidats sont préqualifiés'
-  },
-  { 
-    label: 'Chasse de talents sur mesure',
-    image: '/image/image2.svg',
-    description: 'pour vos besoin critiques ou internationaux'
-  },
-  { 
-    label: 'Plateforme intuitive & fluide ',
-    image: '/image/image3.svg',
-    description: 'pensee pour les recruteurs comme pour mes candidats'
-  },
-  { 
-    label: 'Diversité inclusion ',
-    image: '/image/image4.svg',
-    description: 'pensee pour les recruteurs comme pour mes candidats'
-  },
-  { 
-    label: 'Approche humaine',
-    image: '/image/image3.svg',
-    description: 'chaque candidature est considérée avec soin'
-  },
-]
+import Mobile_carousel from '../ui/Mobile_carousel'
+import { textOptions1 } from '@/app/data'
 
 export default function TextImageSwitcher() {
   /**hooks pour le style et l'apparution d'image */
-  const [currentImage, setCurrentImage] = useState(textOptions[0].image)
+  const [currentImage, setCurrentImage] = useState(textOptions1[0].image)
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   
   // Refs pour les animations au scroll
@@ -60,7 +34,7 @@ export default function TextImageSwitcher() {
         className='mt-[30px] md:mt-[50px] mb-[30px] md:mb-[50px] mb-[50px] '
       >
           <div className='flex flex-col items-center space-y-[20px] md:space-y-[30px] px-4'>
-            <h1 className='font-bold text-2xl md:text-4xl text-center'>Ce qui nous rend différents</h1>
+            <h1 className='font-bold text-4xl md:text-5xl text-center'>Ce qui nous rend différents</h1>
             <p className='text-base md:text-lg text-center'>Pourquoi choisir Yemma-Solutions ?</p>
           </div>
       </motion.div>
@@ -93,7 +67,7 @@ export default function TextImageSwitcher() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col gap-4 w-full lg:w-auto max-w-md lg:max-w-none"
             >
-              {textOptions.map((item, index) => (
+              {textOptions1.map((item, index) => (
                 <motion.button
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -116,10 +90,12 @@ export default function TextImageSwitcher() {
             </motion.div>
       </div>
       {/**  info pour le format mobile  */}
-      <div className='md:hidden' >
-            {textOptions.map((item, index) => (
-               <>
-                 <div className='flex flex-col items-center '>
+      {/* <div className='md:hidden' >
+            {textOptions1.map((item, index) => (
+            
+                 <div
+                 key={item.label}
+                  className='flex flex-col items-center '>
                   <div>
                     <motion.img
                       key={currentImage}
@@ -139,9 +115,11 @@ export default function TextImageSwitcher() {
                         <p className='text-sm md:text-base'>{item.description}</p>
                       </div>
                   </div>
-                </>
+                   
               ))}
-      </div>
+      </div> */}
+      <Mobile_carousel/>
+
     </div>
   )
 }

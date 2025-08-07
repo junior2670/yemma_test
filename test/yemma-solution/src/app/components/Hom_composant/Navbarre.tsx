@@ -1,10 +1,11 @@
 'use client'
-import Link from "next/link";
+
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 export default function Navbar(){
  
-const [menuOpen,setMenuOpen]=useState(false)
+const [menuOpen,setMenuOpen] = useState(false)
 
     return(
 //barre de navigation
@@ -34,7 +35,7 @@ const [menuOpen,setMenuOpen]=useState(false)
                             width={30} 
                             height={15}
                             onClick={() => setMenuOpen(true)} 
-                            className="hidden max-md:block hover:bg-slate-100 cursor-pointer p-[2px] rounded-md"
+                            className="block md:hidden max-md:block  hover:bg-slate-100 cursor-pointer p-[2px] rounded-md"
                             />
                  
                     <div className="flex space-x-4 max-md:hidden">
@@ -42,8 +43,8 @@ const [menuOpen,setMenuOpen]=useState(false)
                         <Link href="/PageUser/Candidat" className="flex  items-center border border-slate-100 p-[7px] px-[25px] rounded-3xl  space-x-3 hover:bg-gray-100 ">
                             <p className="text-2xl">+</p>
                             <p className="font-bold">Candidat</p>
-                        </Link >
-                        <Link  href="/PageUser/Recruteur" className="flex items-center p-[7px]  px-[20px] rounded-3xl font-bold bg-orange-700 opacity-70 text-white space-x-2 hover:bg-orange-700/80"> 
+                        </Link>
+                        <Link href="/PageUser/Recruteur" className="flex items-center p-[7px]  px-[20px] rounded-3xl font-bold bg-orange-700 opacity-70 text-white space-x-2 hover:bg-orange-700/80"> 
                             <Image 
                                 src="/icone/sortie.png" 
                                 alt="sortie" 
@@ -51,7 +52,7 @@ const [menuOpen,setMenuOpen]=useState(false)
                                 height={25} 
                                 />
                             <p className="">Recruteur</p>
-                        </Link >
+                        </Link>
                           
                     </div>
                 </div>
@@ -76,13 +77,14 @@ const [menuOpen,setMenuOpen]=useState(false)
       >
             <div className="flex items-center space-x-[100px]">
                 <div >
-                    <a href="">
+                    {/** logo de l'entreprise */}
+                    <Link href="/">
                         <Image 
                             src="/image/yemma_logo.png" 
                             alt="logo" 
                             width={180} 
                             height={200}  className=" max-md:w-[150px]"/>
-                    </a>
+                    </Link>
                  </div>
                  <div className="cursor-pointer">
                     <Image 
@@ -94,14 +96,17 @@ const [menuOpen,setMenuOpen]=useState(false)
                         />
                 </div>
             </div>
+            {/** button candidat */}
             <div className="flex justify-center w-full">
-                <a href="" className="flex space-x-[15px] justify-center items-center border w-[295px] bg-orange-800 opacity-72 text-white rounded-[10px] p-[3px] hover:bg-orange-700">
+                < Link  href="/PageUser/Candidat" className="flex space-x-[15px] justify-center items-center border w-[295px] bg-orange-800 opacity-72 text-white rounded-[10px] p-[3px] hover:bg-orange-700">
                     <p className="text-[25px]">+</p>
                     <p className="font-bold " >Candidat</p>
-                </a>
+                </Link>
             </div>
+
+            {/** button recruteur */}
             <div className="flex justify-center w-full ">
-                <a href="" className="flex space-x-[15px] justify-center items-center border w-[295px] opacity-72 font-bold rounded-[10px] p-[8px] border border-gray-400 mt-[10px] hover:bg-gray-200">
+                <Link href="/PageUser/Recruteur" className="flex space-x-[15px] justify-center items-center border w-[295px] opacity-72 font-bold rounded-[10px] p-[8px] border border-gray-400 mt-[10px] hover:bg-gray-200">
                     <Image 
                         src="/icone/exitb.png" 
                         alt="sortie" 
@@ -109,7 +114,7 @@ const [menuOpen,setMenuOpen]=useState(false)
                         height={25} 
                         />
                     <p>Recruteur</p>
-                </a>
+                </Link>
            </div>
         </div>
     </>    
