@@ -34,8 +34,8 @@ export default function Mobile_carousel(){
                         />
                       </div>
                       <div className='space-y-3 sm:space-y-4 flex flex-col items-center text-center w-full max-w-md'>
-                        <p className='text-orange-700/70 font-bold text-base sm:text-lg'>{item.label}</p>
-                        <p className='text-sm sm:text-base leading-relaxed px-2'>{item.description}</p>
+                        <p className='text-orange-700/70 font-bold text-base sm:text-lg '>{item.label}</p>
+                        <p className='text-sm sm:text-base leading-relaxed px-2 text-black'>{item.description}</p>
                         <p className='text-xs sm:text-sm leading-relaxed px-2 text-gray-600 bg-orange-50/50 p-3 rounded border-l-4 border-orange-300'>
                           {item.sous_desc}
                         </p>

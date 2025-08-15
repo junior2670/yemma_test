@@ -25,7 +25,7 @@ export default function SectInscription() {
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
         }}
-        className="flex mt-[20px] justify-center"
+        className="flex  justify-center bg-white"
       >
         <div className="flex flex-col lg:flex-row lg:space-x-[50px] w-[1200px] justify-center items-center">
           <motion.div
@@ -35,7 +35,7 @@ export default function SectInscription() {
             }}
             className="space-y-20 mt-[50px] text-center lg:text-left"
           >
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-black">
               Inscrivez-vous en <br /> quelques clics.
             </h1>
             <div className="flex flex-col text-white space-y-[20px] items-center lg:items-start">
@@ -50,14 +50,14 @@ export default function SectInscription() {
 
           <motion.div
             variants={{
-              hidden: { opacity: 0, x: 50 },
+              hidden: { opacity: 0, x: 10 },
               visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.4 } }
             }}
           >
             <Image
               src="/image/stat.svg"
               alt="image vitrine"
-              width={550}
+              width={350}
               height={416}
               className="h-auto "
             />

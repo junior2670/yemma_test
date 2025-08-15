@@ -125,24 +125,24 @@ export default function FeatureCards() {
           className="flex flex-col items-center text-center leading-[1.7] space-y-6 mb-16"
         >
           <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-orange-700/70"
+            className="text-4xl max-sm:text-3xl md:text-5xl font-bold text-orange-700/70"
             whileHover={{ 
               scale: 1.02,
               transition: { duration: 0.3 }
             }}
           >
-            Pourquoi rejoindre Yemma-Solutions ?
+            Pourquoi rejoindre <br />Yemma-Solutions ?
           </motion.h1>
           
           <motion.p 
-            className="text-xl leading-[1.7] text-gray-700 max-w-4xl"
+            className="text-xl leading-[1.7] text-gray-700  max-sm:text-[15px] max-w-4xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Nous ne cherchons pas uniquement des diplômes ou de l'expérience. <br />
-            Nous valorisons les compétences réelles, la motivation, les valeurs <br />
+            Nous ne cherchons pas uniquement des diplômes ou de l'expérience.
+            Nous valorisons les compétences réelles, la motivation, les valeurs
             humaines, et les parcours authentiques.
           </motion.p>
           

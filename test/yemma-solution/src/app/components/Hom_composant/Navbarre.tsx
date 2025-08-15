@@ -10,7 +10,7 @@ const [menuOpen,setMenuOpen] = useState(false)
     return(
 //barre de navigation
     <>
-        <div className=" shadow-md z-50 fixed top-0 right-0 left-0 bg-white ">
+        <div className=" shadow-md z-50 fixed max-md:fixed top-0 right-0 left-0 bg-white ">
           <div className=" flex justify-between h-10 h-[79px] mx-[50px] items-center max-md:h-[50px] max-md:mx-[20px]"> 
              {/*LOGO*/}
                 <div>
@@ -35,7 +35,7 @@ const [menuOpen,setMenuOpen] = useState(false)
                             width={30} 
                             height={15}
                             onClick={() => setMenuOpen(true)} 
-                            className="block md:hidden max-md:block  hover:bg-slate-100 cursor-pointer p-[2px] rounded-md"
+                            className="block md:hidden   hover:bg-slate-100 cursor-pointer p-[2px] rounded-md"
                             />
                  
                     <div className="flex space-x-4 max-md:hidden">
@@ -106,7 +106,7 @@ const [menuOpen,setMenuOpen] = useState(false)
 
             {/** button recruteur */}
             <div className="flex justify-center w-full ">
-                <Link href="/PageUser/Recruteur" className="flex space-x-[15px] justify-center items-center border w-[295px] opacity-72 font-bold rounded-[10px] p-[8px] border border-gray-400 mt-[10px] hover:bg-gray-200">
+                <Link href="/PageUser/Recruteur" className="flex text-black  space-x-[15px] justify-center items-center border w-[295px] opacity-72 font-bold rounded-[10px] p-[8px] border border-gray-400 mt-[10px] hover:bg-gray-200">
                     <Image 
                         src="/icone/exitb.png" 
                         alt="sortie" 

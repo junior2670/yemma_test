@@ -8,11 +8,13 @@ export default function RecruteurPage(){
 
     return (
         <>
-           <Navbar/>
-            <Hero/>
-            <TextImageSwitcher/>
-            <TextImageSwitcherA/>
-            <Footer/>
+        <div className="bg-white">
+                <Navbar/>
+                <Hero/>
+                <TextImageSwitcher/>
+                <TextImageSwitcherA/>
+                <Footer/>
+        </div>
         </>
     )
 }

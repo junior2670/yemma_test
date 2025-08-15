@@ -109,7 +109,7 @@ const YemmaSolutionsCarousel = () => {
   };
 
   return (
-    <div className="h- bg-white relative overflow-hidden">
+    <div className=" bg-white relative overflow-hidden">
       {/* Particules d'animation de fond */}
       <div className="absolute inset-0 ">
         <div className="absolute top-10 left-10 w-2 h-2 bg-orange-300 rounded-full animate-bounce"></div>

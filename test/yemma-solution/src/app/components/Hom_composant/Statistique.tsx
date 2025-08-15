@@ -60,7 +60,7 @@ export default function Statistique() {
   return (
     <>
       {/**titre des stat */}
-      <div className="space-y-[50px] md:space-y-[100px] mb-[30px] md:mb-[50px] px-4">
+      <div className="space-y-[50px] md:space-y-[100px] bg-white mb-[30px] md:mb-[50px] px-4">
         <motion.div 
           ref={titleRef}
           initial={{ opacity: 0, y: 50 }}
@@ -71,7 +71,7 @@ export default function Statistique() {
           <h1 className="text-2xl md:text-4xl font-bold text-orange-700/70 text-center">
             Des résultats concrets, une confiance qui grandit.
           </h1>
-          <p className="text-[14px] md:text-[15px] text-center max-w-2xl">
+          <p className="text-[14px] md:text-[15px] text-center max-w-2xl text-black">
             En peu de temps, Yemma-Solutions s'est imposée comme un acteur fiable du recrutement humain et ciblé.
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ export default function Statistique() {
             >
               +{counter1.count.toLocaleString()}
             </motion.h1>
-            <p className="font-bold text-sm md:text-base">Candidats préqualifiés</p>
+            <p className="font-bold text-sm md:text-base text-black">Candidats préqualifiés</p>
             <p className="text-xs md:text-sm text-gray-600">dans notre vivier (junior à top management)</p>
           </motion.div>
 
@@ -115,7 +115,7 @@ export default function Statistique() {
             >
               {counter2.count}%
             </motion.h1>
-            <p className="font-bold text-sm md:text-base">Taux de satisfaction</p>
+            <p className="font-bold text-sm md:text-base text-black">Taux de satisfaction</p>
             <p className="text-xs md:text-sm text-gray-600">de nos clients partenaires</p>
           </motion.div>
 
@@ -134,7 +134,7 @@ export default function Statistique() {
             >
               {counter3.count}%
             </motion.h1>
-            <p className="font-bold text-sm md:text-base">Missions de recrutement réussies</p>
+            <p className="font-bold text-sm md:text-base text-black">Missions de recrutement réussies</p>
             <p className="text-xs md:text-sm text-gray-600">en moins de 30 jours</p>
           </motion.div>
 
@@ -153,7 +153,7 @@ export default function Statistique() {
             >
               +{counter4.count}
             </motion.h1>
-            <p className="font-bold text-sm md:text-base">Entreprises accompagnées</p>
+            <p className="font-bold text-sm md:text-base text-black">Entreprises accompagnées</p>
             <p className="text-xs md:text-sm text-gray-600">tous secteurs confondus</p>
           </motion.div>
         </div>

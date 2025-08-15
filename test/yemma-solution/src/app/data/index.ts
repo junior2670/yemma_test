@@ -143,3 +143,27 @@ export const SecteurCards=[
     desc:"Vous entrez sur le marché du travail ? Notre plateforme vous aide à décrocher votre première expérience en vous connectant à des entreprises prêtes à miser sur votre potentiel."
   }
 ]
+//donnee de la page recruteur section nos service 
+export const textOptions2 = [
+  { 
+    label: 'Accès à notre vivier de talents',
+    image: '/image/image1.svg',
+    description: "Parcourez notre base de profils évalués et filtrés par expertise, niveau d'expérience, secteur et localisation"
+  },
+  { 
+    label: 'Service de chasse de profils rares',
+    image: '/image/image2.svg',
+    description: 'Confiez-nous votre besoin, nous activons notre réseau local et international pour vous trouver le bon talent, discret et aligné'
+  },
+  { 
+    label: 'Recrutement sur mesure ',
+    image: '/image/image3.svg',
+    description: "Besoin d'un accompagnement clé en main  Nous gérons pour vous toute la phase de sourcing, préqualification, entretiens, shortlist."
+  },
+ 
+  { 
+    label: "Intégration de vos offres d'emploi",
+    image: '/image/image3.svg',
+    description: 'Publiez directement vos offres sur votre espace pour matcher les bons profils'
+  },
+]

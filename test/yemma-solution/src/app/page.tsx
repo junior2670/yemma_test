@@ -10,7 +10,7 @@ import Statistique from "./components/Hom_composant/Statistique";
 import Footer from "./components/Hom_composant/Footer";
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-white">
          <Navbar/>
          <Hero/> 
          <YemmaSolutionsCarousel/>

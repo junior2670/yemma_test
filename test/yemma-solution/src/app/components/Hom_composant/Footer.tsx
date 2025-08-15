@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Buttons } from "../ui/Button"
 
 export default function Footer(){
   return(
@@ -16,7 +17,7 @@ export default function Footer(){
                 </svg>
                 <p className="max-sm:text-[15px] ">Yemma-solution</p>
               </a>
-              <p className="text-[15px] max-sm:text-[12px]">
+              <p className="text-[15px] text-black max-sm:text-[12px]">
                 Des talents qui comptent. Une solution qui <br  /> 
                 <span className="md:hidden"> </span>comprend.
               </p>
@@ -42,7 +43,7 @@ export default function Footer(){
               </div>
         </div>
         <div>
-            <a href="" className="mr-[100px] max-sm:mr-[30px] max-md:mr-[30px] max-lg:mr-[60px] max-sm:mr-[30px] max-sm:p-2 items-center  p-3 bg-orange-700/70 text-white rounded-md max-sm:text-[12px]">Constact us</a>
+           <Buttons label="Contact" className="p-[10px] px-[15px] max-sm:mr-[20px] mr-[50px]" />
         </div>
     </div>
       <div className="flex justify-center px-4">
@@ -50,12 +51,12 @@ export default function Footer(){
       </div>
       {/**bas du footer  */}
       <div className="flex flex-col lg:flex-row justify-between mb-[20px] space-y-4 md:space-y-0 px-4 md:px-0 max-lg:space-y-[15px] ">
-        <div className="text-[15px] ml-[20px] md:ml-[100px] max-sm:text-[13px] ">
+        <div className="text-[15px] ml-[20px] md:ml-[100px] max-sm:text-[13px] text-black">
           <p>
             Copyright © 2025 Your company. All rights reserved.
           </p>
         </div>
-        <div className="text-[15px] md:ml-[100px]  space-x-[10px] ml-[20px] md:ml-0 mr-0 md:mr-[120px]  max-sm:text-[13px]">
+        <div className="text-[15px] md:ml-[100px] text-black max-md:mb-[10px] space-x-[10px] ml-[20px] md:ml-0 mr-0 md:mr-[120px]  max-sm:text-[13px]">
           <a href="" className="hover:underline"> About us</a>
           <a href="" className="hover:underline">Terms and conditions</a>
           <a href="" className="hover:underline">Privacy</a>

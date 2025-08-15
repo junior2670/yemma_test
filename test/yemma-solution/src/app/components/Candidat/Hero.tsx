@@ -100,7 +100,7 @@ export default function Hero() {
         
         >
           <motion.h1 
-            className="text-2xl sm:text-3xl md:text-3xl lg:text-5xl leading-[1.5] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.9] xl:leading-[1.4] font-[550]"
+            className="text-2xl text-black max-sm:hidden sm:text-3xl md:text-3xl lg:text-5xl leading-[1.5] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.9] xl:leading-[1.4] font-[550]"
             variants={textVariants}
             
           >
@@ -126,13 +126,12 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p 
-            className="text-sm sm:text-base md:text-sm lg:text-base leading-relaxed md:leading-snug lg:leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none mx-auto lg:mx-0"
+            className="text-sm text-black sm:text-base md:text-sm lg:text-base leading-relaxed md:leading-snug lg:leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none mx-auto lg:mx-0"
             variants ={textVariants}
             transition={{ delay: 0.4 }}
           >
             Chez Yemma-Solutions, nous croyons que chaque talent mérite d’être vu, reconnu et valorisé.
-            Notre plateforme vous permet de mettre en avant vos compétences, vos ambitions et votre singularité.
-            Construisez votre profil, parlez de vous, et donnez vie à votre potentiel.
+
           </motion.p>
           
           {/* BUTTON*/}
@@ -143,12 +142,12 @@ export default function Hero() {
           >
             <motion.a 
               href="" 
-              className="text-white max-sm:text-[12px] border bg-orange-700/70  p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity w-full sm:w-auto md:w-[200px] lg:w-auto rounded-sm"
+              className="text-white max-sm:text-[12px] border bg-orange-700/70  p-3 px-5 text-center whitespace-nowrap hover:opacity-90 transition-opacity  sm:w-[100px] md:w-[200px] lg:w-auto rounded-sm"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
-              créer un compte maintenant
+              Créer un compte
             </motion.a>
                
 
@@ -156,6 +155,31 @@ export default function Hero() {
         </motion.div>
         
         {/* Section image */}
+        {/** titre pour le format mobile */}
+           <motion.h1 
+            className=" sm:hidden text-center text-2xl text-orange-700/70  sm:text-3xl md:text-3xl lg:text-5xl leading-[1.5] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.9] xl:leading-[1.4] font-[550]"
+            variants={textVariants}
+            
+          >
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >Faites briller votre parcours professionnel.
+            </motion.span>
+            <br/>
+            <motion.span 
+              className="text-green-700/70  tracking-wide text-2xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
+            >
+              <br className="hidden lg:hidden   sm:block"/> 
+              
+              
+            </motion.span>
+            
+          </motion.h1>
         <motion.div 
           className="w-full lg:w-auto flex justify-center lg:justify-end flex-shrink-0 order-1 lg:order-2"
           variants={imageVariants}

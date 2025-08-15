@@ -95,7 +95,7 @@ export default function TextImageSwitcherA() {
                <span className=''>Yemma</span>-<span className=''>Solutions</span>
                ?
             </h1>
-            <p className='text-sm sm:text-base md:text-xl text-center font-bold max-w-4xl'>Un  partenaire, pas juste un prestataire.</p>
+            <p className='text-sm sm:text-base md:text-xl text-center font-bold max-w-4xl text-black'>Un  partenaire, pas juste un prestataire.</p>
           </div>
       </motion.div>
 
@@ -217,9 +217,9 @@ export default function TextImageSwitcherA() {
                     transition={{duration: 1, ease:'easeOut'}}
                     className='space-y-[20px] lg:hidden block md:space-y-[25px] lg:space-y-[35px] mt-[60px] md:mt-[80px] lg:mt-[100px] px-4 md:px-6 lg:px-8 text-center'
                     >
-                <p className='font-bold text-lg md:text-xl lg:text-2xl text-green-700/70'>Prêt à recruter autrement ?</p>
-                <h1 className='text-xl sm:text-xl md:text-2xl lg:text-3xl font-[275] leading-relaxed max-w-3xl md:max-w-4xl lg:max-w-4xl mx-auto'>
-                  Accédez dès maintenant à notre vivier de talents ou confiez-nous 
+                <p className='font-bold text-lg md:text-xl text-2xl lg:text-2xl text-green-700/70'>Prêt à recruter autrement ?</p>
+                <h1 className='text-2xl sm:text-xl md:text-2xl lg:text-3xl font-[275] leading-relaxed max-w-3xl md:max-w-4xl lg:max-w-4xl mx-auto text-black font-bold'>
+                  Accédez dès maintenant à notre vivier de talents ou confiez-nous  
                   votre besoin en recrutement.
                 </h1>
                 <div className="pt-2 md:pt-4">

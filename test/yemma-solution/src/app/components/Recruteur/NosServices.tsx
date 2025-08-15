@@ -3,36 +3,14 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { img } from 'framer-motion/client'
+import { textOptions2 } from '@/app/data'
 
-const textOptions = [
-  { 
-    label: 'Accès à notre vivier de talents',
-    image: '/image/image1.svg',
-    description: "Parcourez notre base de profils évalués et filtrés par expertise, niveau d'expérience, secteur et localisation"
-  },
-  { 
-    label: 'Service de chasse de profils rares',
-    image: '/image/image2.svg',
-    description: 'Confiez-nous votre besoin, nous activons notre réseau local et international pour vous trouver le bon talent, discret et aligné'
-  },
-  { 
-    label: 'Recrutement sur mesure ',
-    image: '/image/image3.svg',
-    description: "Besoin d'un accompagnement clé en main  Nous gérons pour vous toute la phase de sourcing, préqualification, entretiens, shortlist."
-  },
- 
-  { 
-    label: "Intégration de vos offres d'emploi",
-    image: '/image/image3.svg',
-    description: 'Publiez directement vos offres sur votre espace pour matcher les bons profils'
-  },
-]
 
 
 
 export default function TextImageSwitcher() {
   /**hooks pour le style et l'apparution d'image */
-  const [currentImage, setCurrentImage] = useState(textOptions[0].image)
+  const [currentImage, setCurrentImage] = useState(textOptions2[0].image)
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const [isPaused, setIsPaused] = useState(false)
   
@@ -62,8 +40,8 @@ type Service = {
 
     const interval = setInterval(() => {
       setActiveIndex(prevIndex => {
-        const nextIndex = prevIndex === null ? 1 : (prevIndex + 1) % textOptions.length;
-        setCurrentImage(textOptions[nextIndex].image);
+        const nextIndex = prevIndex === null ? 1 : (prevIndex + 1) % textOptions2.length;
+        setCurrentImage(textOptions2[nextIndex].image);
         return nextIndex;
       });
     }, 3000); // Change toutes les 3 secondes
@@ -102,7 +80,7 @@ type Service = {
       >
           <div className='flex flex-col items-center space-y-[20px] md:space-y-[30px] px-4'>
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-orange-700/70 mb-8 transition-all duration-1200 delay-200 text-center'>Nos services</h1>
-            <p className='text-sm sm:text-base md:text-xl text-center font-bold max-w-4xl'>Une solution, plusieurs leviers pour recruter.</p>
+            <p className='text-sm sm:text-base md:text-xl text-center font-bold max-w-4xl text-black'>Une solution, plusieurs leviers pour recruter.</p>
           </div>
       </motion.div>
 
@@ -135,7 +113,7 @@ type Service = {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col gap-4 w-full lg:w-[500px] max-w-md lg:max-w-none lg:flex-shrink-0"
             >
-              {textOptions.map((item, index) => (
+              {textOptions2.map((item, index) => (
                 <motion.button
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -160,8 +138,8 @@ type Service = {
                     {item.label}
                   </motion.p>
                   <motion.p 
-                    className={`text-xs md:text-sm lg:text-base transition-all duration-300 leading-relaxed ${
-                      activeIndex === index ? 'text-black font-medium' : 'text-black-600'
+                    className={` md:text-sm  lg:text-base transition-all duration-300 leading-relaxed ${
+                      activeIndex === index ? 'text-black font-medium' : 'text-black'
                     }`}
                     animate={activeIndex === index ? { opacity: [0.8, 1] } : { opacity: 0.8 }}
                     transition={{ duration: 0.3 }}
@@ -175,7 +153,7 @@ type Service = {
 
       {/**  info pour le format mobile  */}
       <div className='block md:hidden px-4'>
-            {textOptions.map((item, index) => (
+            {textOptions2.map((item, index) => (
                <div key={index} className='flex flex-col items-center mb-8 last:mb-0'>
                  <div className='w-full flex justify-center mb-4'>
                     <motion.img
@@ -188,8 +166,8 @@ type Service = {
                     />
                  </div>
                  <div className='space-y-3 sm:space-y-4 flex flex-col items-center text-center w-full max-w-md'>
-                    <p className='text-orange-700/70 font-bold text-base sm:text-lg'>{item.label}</p>
-                    <p className='text-sm sm:text-base leading-relaxed px-2'>{item.description}</p>
+                    <p className='text-orange-700/70 font-bold text-base sm:text-lg '>{item.label}</p>
+                    <p className='text-sm sm:text-base leading-relaxed px-2 text-black'>{item.description}</p>
                  </div>
                </div>
               ))}

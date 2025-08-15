@@ -6,10 +6,12 @@ export default function Candidat(){
 
     return(
          <>
-         <Navbar/>
-         <Hero/>
-         <FeatureCards/>
-         <Secteur/>
+         <div className="bg-white">
+            <Navbar/>
+            <Hero/>
+            <FeatureCards/>
+            <Secteur/>
+         </div>
          </>
     )
 }

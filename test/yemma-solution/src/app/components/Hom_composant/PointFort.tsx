@@ -24,7 +24,7 @@ export default function TextImageSwitcher() {
   }, [])
 
   return (
-    <div ref={ref} className='mb-[50px]'>
+    <div ref={ref} className='mb-[50px] bg-white'>
       {/** titre */}
       <motion.div 
         ref={titleRef}
@@ -34,8 +34,8 @@ export default function TextImageSwitcher() {
         className='mt-[30px] md:mt-[50px] mb-[30px] md:mb-[50px] mb-[50px] '
       >
           <div className='flex flex-col items-center space-y-[20px] md:space-y-[30px] px-4'>
-            <h1 className='font-bold text-4xl md:text-5xl text-center'>Ce qui nous rend différents</h1>
-            <p className='text-base md:text-lg text-center'>Pourquoi choisir Yemma-Solutions ?</p>
+            <h1 className='font-bold text-4xl md:text-5xl text-center text-black'>Ce qui nous rend différents</h1>
+            <p className='text-base md:text-lg text-center text-black'>Pourquoi choisir Yemma-Solutions ?</p>
           </div>
       </motion.div>
     {/** info pour le format desktop et tablette  */}
@@ -84,7 +84,7 @@ export default function TextImageSwitcher() {
                   }`}
                 >
                   <p className='text-orange-700/70 font-bold text-base md:text-lg'>{item.label}</p>
-                  <p className='text-sm md:text-base'>{item.description}</p>
+                  <p className='text-sm md:text-base text-black'>{item.description}</p>
                 </motion.button>
               ))}
             </motion.div>

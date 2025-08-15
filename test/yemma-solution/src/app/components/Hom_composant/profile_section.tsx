@@ -74,7 +74,7 @@ const RecruitmentLanding = () => {
       title: 'Exprimez vos expériences et vos aspirations',
       description:
         'Décrivez votre parcours et ce que vous visez...',
-      color: 'bg-orange-500',
+      color: 'bg-orange-700',
     },
     {
       icon: <Eye className="w-8 h-8" />,
@@ -100,7 +100,7 @@ const RecruitmentLanding = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen mb-[0px] bg-white overflow-hidden">
       {/* Header */}
       <div className="text-center max-w-5xl mx-auto px-6 py-20">
         <motion.h1
@@ -166,7 +166,7 @@ const RecruitmentLanding = () => {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-4xl  md:text-5xl font-bold text-gray-900"
+              className="text-4xl md:text-5xl font-bold text-gray-900"
             >
               Faites briller votre <span className="text-orange-700/70">parcours</span>
             </motion.h2>

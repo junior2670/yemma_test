@@ -100,7 +100,7 @@ export default function Hero() {
           variants={textVariants}
         >
           <motion.h1 
-            className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl leading-[1.2] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.7] xl:leading-[1.4] font-[550]"
+            className="text-2xl max-sm:hidden text-black sm:text-3xl md:text-3xl lg:text-4xl leading-[1.2] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.7] xl:leading-[1.4] font-[550]"
             variants={textVariants}
           >
             <motion.span
@@ -135,7 +135,7 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p 
-            className="text-sm sm:text-base md:text-sm lg:text-base leading-relaxed md:leading-snug lg:leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none mx-auto lg:mx-0"
+            className="text-sm sm:text-base text-black md:text-sm lg:text-base leading-relaxed md:leading-snug lg:leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none mx-auto lg:mx-0"
             variants ={textVariants}
             transition={{ delay: 0.4 }}
           >
@@ -182,6 +182,41 @@ export default function Hero() {
         </motion.div>
         
         {/* Section image */}
+        {/**titre en format mobile  */}
+          <motion.h1 
+            className="text-2xl text-center sm:hidden text-black sm:text-3xl md:text-3xl lg:text-4xl leading-[1.2] sm:leading-[1.3] md:leading-[1.3] lg:leading-[1.7] xl:leading-[1.4] font-[550]"
+            variants={textVariants}
+          >
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+            Recruter plus vite.Mieux.
+            </motion.span>
+            <br/>
+            <motion.span 
+              className="text-green-700/70  tracking-wide text-2xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
+            >
+              <br className="hidden lg:hidden   sm:block"/> 
+              
+               <Typewriter
+                    words={[' Chasse ciblée pour vos besoins rares ou stratégiques',
+                         ' Accès à des profils locaux internationaux et issus de la diaspora',
+                         ' accédez à un vivier de talents qualifiés']}
+                    loop={true}
+                    cursor={true}
+                    cursorStyle=" "
+                    typeSpeed={150}
+                    deleteSpeed={70}
+                    delaySpeed={1000}
+                />
+            </motion.span>
+            
+          </motion.h1>
         <motion.div 
           className="w-full lg:w-auto flex justify-center lg:justify-end flex-shrink-0 order-1 lg:order-2"
           variants={imageVariants}
