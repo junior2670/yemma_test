@@ -57,8 +57,8 @@ export default function SectInscription() {
             <Image
               src="/image/stat.svg"
               alt="image vitrine"
-              width={350}
-              height={416}
+              width={550}
+              height={550}
               className="h-auto "
             />
           </motion.div>

@@ -99,48 +99,48 @@ export const SecteurCards=[
   {
     icone:"",
     titre:"Cadres & Top Management",
-    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ? Notre plateforme vous connecte à des opportunités à la hauteur de vos ambitions, en toute confidentialité."
+    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ? "
 
   },
    {
     icone:"",
     titre:"Talents expérimentés",
-    desc:"Vous avez plusieurs années de pratique et une expertise solide ? Notre plateforme vous aide à valoriser votre parcours et à accéder à des postes alignés avec vos compétences."
+    desc:"Vous avez plusieurs années de pratique et une expertise solide ?"
 
   }, {
     icone:"",
     titre:"Agents de maîtrise & techniciens",
-    desc:"Vous avez plusieurs années de pratique et une expertise solide ? Notre plateforme vous aide à valoriser votre parcours et à accéder à des postes alignés avec vos compétences."
+    desc:"Vous avez plusieurs années de pratique et une expertise solide ? "
 
   }, {
     icone:"",
     titre:"Talents à fort potentiel issus de zones rurales ou peu visibles",
-    desc:"Vous avez les compétences, mais pas toujours la vitrine ? Notre plateforme vous donne la visibilité que vous méritez et vous connecte aux bonnes opportunités, où que vous soyez."
+    desc:"Vous avez les compétences, mais pas toujours la vitrine ?"
 
   }, {
     icone:"",
     titre:"Expatriés en recherche d’opportunités en Afrique",
-    desc:"Vous souhaitez revenir ou vous installer en Afrique ? Notre plateforme vous connecte avec des entreprises locales et internationales à la recherche de profils comme le vôtre."
+    desc:"Vous souhaitez revenir ou vous installer en Afrique ? "
 
   }, {
     icone:"",
     titre:"Cadres & Top Management",
-    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ? Notre plateforme vous connecte à des opportunités à la hauteur de vos ambitions, en toute confidentialité."
+    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ?"
 
   }, {
     icone:"",
     titre:"Talents issus de la diaspora",
-    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ? Notre plateforme vous connecte à des opportunités à la hauteur de vos ambitions, en toute confidentialité."
+    desc:"Vous êtes un décideur, un stratège, un leader en quête de nouveaux défis ? "
 
   }, {
     icone:"",
     titre:"Profils juniors ou reconvertis",
-    desc:"Que vous débutiez votre carrière ou changiez de voie, notre plateforme vous aide à trouver des opportunités adaptées à votre niveau et à valoriser votre potentiel."
+    desc:"Que vous débutiez votre carrière ou changiez de voie, notre plateforme vous aide à trouver des opportunités adaptées."
   },
   {
     icone:"",
     titre:"Jeunes diplômés / Stagiaires",
-    desc:"Vous entrez sur le marché du travail ? Notre plateforme vous aide à décrocher votre première expérience en vous connectant à des entreprises prêtes à miser sur votre potentiel."
+    desc:"Vous entrez sur le marché du travail ?"
   }
 ]
 //donnee de la page recruteur section nos service 
@@ -148,12 +148,12 @@ export const textOptions2 = [
   { 
     label: 'Accès à notre vivier de talents',
     image: '/image/image1.svg',
-    description: "Parcourez notre base de profils évalués et filtrés par expertise, niveau d'expérience, secteur et localisation"
+    description: "Parcourez notre base de profils évalués et filtrés par expertise"
   },
   { 
     label: 'Service de chasse de profils rares',
     image: '/image/image2.svg',
-    description: 'Confiez-nous votre besoin, nous activons notre réseau local et international pour vous trouver le bon talent, discret et aligné'
+    description: 'Confiez-nous votre besoin, nos activons notre réseau local et international pour vous trouver le bon talent, discret et aligné'
   },
   { 
     label: 'Recrutement sur mesure ',

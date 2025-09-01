@@ -85,7 +85,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="mt-[80px] max-md:mt-[50px] flex justify-center items-center min-h-[500px] md:min-h-[579px] px-4 py-6 md:py-8 bg-gray-50/50">
+    <div className="mt-[80px] max-md:mt-[50px] bg-orange-300/5 flex justify-center items-center min-h-[500px] md:min-h-[579px] px-4 py-6 md:py-8 bg-gray-50/50">
       {/** text et lien vers cvthèque */}
       <motion.div 
         className="flex flex-col lg:flex-row justify-center items-center lg:space-x-[80px] xl:space-x-[120px] space-y-6 md:space-y-8 lg:space-y-0 mt-[30px] md:mt-[0px]  mx-4 md:mx-[30px] lg:mx-[50px] max-w-6xl w-full"
